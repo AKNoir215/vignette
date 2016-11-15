@@ -20,7 +20,7 @@
    (GET route
         request
      (get-handler store
-                  (route->map-fn (:route-params request)
+                  (route->map-fn (:params request)
                                  request)
                   request))])
 
